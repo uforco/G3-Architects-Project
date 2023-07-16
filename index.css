@@ -53,9 +53,9 @@ nav li {
 }
 .banner-text {
   color: #727272;
-  padding: 20px 0;
+  padding: 12px 0;
   text-align: justify;
-  font-size: 16px;
+  font-size: 14px !important;
 }
 .btn-primary {
   margin-top: 40px;
@@ -114,13 +114,14 @@ main {
 
 }
 .features-container {
-  width: 40%;
+  width: 45%;
 }
 .features-waper{
   display: flex;
-  gap: 25px;
+  gap: 8em;
   overflow: hidden !important;
-  margin: 0 10%;
+  margin: 0 8%;
+  flex-direction: row;
 }
 .section-title {
   font-size: 2.8rem;
@@ -129,7 +130,7 @@ main {
 }
 .features .section-title {
   border-left: 5px solid #ff900e;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
 .card {
@@ -141,24 +142,30 @@ main {
 }
 .feature-img {
   position: relative !important;
-  width: 60%;
+  width: 55%;
 }
 .feature-img img {
   width: 100%;
+  height: 90%;
 }
 
 .Experience {
   border-radius: 8px;
   background: #ff900e;
   color: #fff;
-  width: 180px;
-  padding: 28px;
+  padding: 30px 40px;
   text-align: center;
-  bottom: -50px;
-  left: -35px;
+  bottom: 25px;
+  left: -100px;
   position: absolute;
 }
-
+.Experience > h2{
+  font-size: 2.2em;
+}
+.Experience > p{
+  font-size: 1.2em !important;
+  padding-top: 5px;
+}
 /* FACTS STYLES */
 .facts-card {
   display: flex;
@@ -172,12 +179,16 @@ main {
 .card {
   border-radius: 8px;
   text-align: justify;
-  padding: 30px 20px;
-  box-shadow: 3px 3px 15px -5px #878787;
+  padding: 25px;
+  box-shadow: 5px 5px 15px -5px #8d8d8d;
   /* border-radius: 8px;
   border: 1px solid #ff900e;
   text-align: center;
   padding: 30px; */
+}
+.card > h3{
+  font-size: 1em;
+  font-weight: 900;
 }
 .card img {
   text-align: center;
@@ -197,8 +208,8 @@ main {
   text-align: center;
 }
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
   color: #131313;
 }
 .sponsor-img {
@@ -253,5 +264,61 @@ main {
   .sponsor-img {
     margin: 50px;
     gap: 50px;
+  }
+  .features-waper {
+    display: flex;
+    gap: 2em;
+    overflow: hidden !important;
+    margin: 0 8%;
+    flex-direction: column;
+  }
+  .features-container {
+    width: 100%;
+    padding:0 25px;
+  }
+  .feature-img {
+    position: relative !important;
+    width: 100%;
+    padding:0 35px;
+  }
+  .Experience {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .features-waper {
+    display: flex;
+    gap: 2em;
+    overflow: hidden !important;
+    margin: 0 8%;
+    flex-direction: column;
+  }
+  .features-container {
+    width: 100%;
+    padding:0 25px;
+  }
+  .feature-img {
+    position: relative !important;
+    width: 100%;
+    padding:0 35px;
+  }
+  .Experience {
+    border-radius: 8px;
+    background: #ff900e;
+    color: #fff;
+    width: 176px;
+    padding: 25px 36px;
+    text-align: center;
+    bottom: 0px;
+    right: -80%;
+    position: absolute !important;
+  }
+  .Experience > h2 {
+    font-size: 1.2em;
+  }
+  .Experience > p {
+    font-size: 0.8em !important;
+    padding-top: 5px;
   }
 }
